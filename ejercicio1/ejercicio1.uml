@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_P8qpgPq7EfCOYJtfgNHFpA" name="ejercicio1">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_P_yO8Pq7EfCOYJtfgNHFpA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2jXpgPq7EfCOYJtfgNHFpA" name="POOArrayList">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2jZesPq7EfCOYJtfgNHFpA" name="gestionCantantesyCanciones">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2jZesfq7EfCOYJtfgNHFpA" name="Cancion" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2jbT4Pq7EfCOYJtfgNHFpA" name="titulo" visibility="private" type="_2jaFw_q7EfCOYJtfgNHFpA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2jciAPq7EfCOYJtfgNHFpA" name="genero" visibility="private" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2jflU_q7EfCOYJtfgNHFpA" name="duracion" visibility="private" type="_2jflUvq7EfCOYJtfgNHFpA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2jgzcfq7EfCOYJtfgNHFpA" name="listaCant" visibility="private" type="_2jgMYPq7EfCOYJtfgNHFpA" isUnique="false">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2jgzcvq7EfCOYJtfgNHFpA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2jgzc_q7EfCOYJtfgNHFpA" value="*"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jioovq7EfCOYJtfgNHFpA" name="Cancion" specification="_2jgzdPq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>this.titulo = titulo;&#xD;
+this.genero = genero;&#xD;
+this.duracion = duracion;&#xD;
+listaCant = new ArrayList&lt;Cantante>();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jjPsfq7EfCOYJtfgNHFpA" name="Cancion" specification="_2jioo_q7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body></body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jj2wfq7EfCOYJtfgNHFpA" name="asociarCantante" specification="_2jjPsvq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return this.listaCant.add(cantante);</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jj2xPq7EfCOYJtfgNHFpA" name="mostrarCantantes" specification="_2jj2wvq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return this.listaCant.toString();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jkd0fq7EfCOYJtfgNHFpA" name="getTitulo" specification="_2jj2xfq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return titulo;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jkd1Pq7EfCOYJtfgNHFpA" name="setTitulo" specification="_2jkd0vq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>this.titulo = titulo;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jlE4fq7EfCOYJtfgNHFpA" name="getGenero" specification="_2jkd1fq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return genero;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jlE5Pq7EfCOYJtfgNHFpA" name="setGenero" specification="_2jlE4vq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>this.genero = genero;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jlE5_q7EfCOYJtfgNHFpA" name="getDuracion" specification="_2jlE5fq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return duracion;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jlr8vq7EfCOYJtfgNHFpA" name="setDuracion" specification="_2jlr8Pq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>this.duracion = duracion;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jlr9_q7EfCOYJtfgNHFpA" name="getListaCant" specification="_2jlr8_q7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>return listaCant;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2jmTBPq7EfCOYJtfgNHFpA" name="setListaCant" specification="_2jmTAPq7EfCOYJtfgNHFpA">
+            <language>JAVA</language>
+            <body>this.listaCant = listaCant;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jgzdPq7EfCOYJtfgNHFpA" name="Cancion" visibility="public" method="_2jioovq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jiBkfq7EfCOYJtfgNHFpA" name="titulo" type="_2jaFw_q7EfCOYJtfgNHFpA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jiooPq7EfCOYJtfgNHFpA" name="genero"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jioofq7EfCOYJtfgNHFpA" name="duracion" type="_2jflUvq7EfCOYJtfgNHFpA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jioo_q7EfCOYJtfgNHFpA" name="Cancion" visibility="public" method="_2jjPsfq7EfCOYJtfgNHFpA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jjPsvq7EfCOYJtfgNHFpA" name="asociarCantante" visibility="public" method="_2jj2wfq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jjPtPq7EfCOYJtfgNHFpA" type="_2jjPs_q7EfCOYJtfgNHFpA" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jj2wPq7EfCOYJtfgNHFpA" name="cantante" type="_2jgMYPq7EfCOYJtfgNHFpA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jj2wvq7EfCOYJtfgNHFpA" name="mostrarCantantes" visibility="public" method="_2jj2xPq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jj2w_q7EfCOYJtfgNHFpA" type="_2jaFw_q7EfCOYJtfgNHFpA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jj2xfq7EfCOYJtfgNHFpA" name="getTitulo" visibility="public" method="_2jkd0fq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jkd0Pq7EfCOYJtfgNHFpA" type="_2jaFw_q7EfCOYJtfgNHFpA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jkd0vq7EfCOYJtfgNHFpA" name="setTitulo" visibility="public" method="_2jkd1Pq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jkd0_q7EfCOYJtfgNHFpA" name="titulo" type="_2jaFw_q7EfCOYJtfgNHFpA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jkd1fq7EfCOYJtfgNHFpA" name="getGenero" visibility="public" method="_2jlE4fq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jlE4Pq7EfCOYJtfgNHFpA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jlE4vq7EfCOYJtfgNHFpA" name="setGenero" visibility="public" method="_2jlE5Pq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jlE4_q7EfCOYJtfgNHFpA" name="genero"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jlE5fq7EfCOYJtfgNHFpA" name="getDuracion" visibility="public" method="_2jlE5_q7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jlE5vq7EfCOYJtfgNHFpA" type="_2jflUvq7EfCOYJtfgNHFpA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jlr8Pq7EfCOYJtfgNHFpA" name="setDuracion" visibility="public" method="_2jlr8vq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jlr8fq7EfCOYJtfgNHFpA" name="duracion" type="_2jflUvq7EfCOYJtfgNHFpA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jlr8_q7EfCOYJtfgNHFpA" name="getListaCant" visibility="public" method="_2jlr9_q7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jlr9Pq7EfCOYJtfgNHFpA" type="_2jgMYPq7EfCOYJtfgNHFpA" direction="return">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2jlr9fq7EfCOYJtfgNHFpA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2jlr9vq7EfCOYJtfgNHFpA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2jmTAPq7EfCOYJtfgNHFpA" name="setListaCant" visibility="public" method="_2jmTBPq7EfCOYJtfgNHFpA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2jmTAfq7EfCOYJtfgNHFpA" name="listaCant" type="_2jgMYPq7EfCOYJtfgNHFpA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2jmTAvq7EfCOYJtfgNHFpA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2jmTA_q7EfCOYJtfgNHFpA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2jgMYPq7EfCOYJtfgNHFpA" name="Cantante"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2jaFwPq7EfCOYJtfgNHFpA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2jaFwfq7EfCOYJtfgNHFpA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_2jaFwvq7EfCOYJtfgNHFpA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_2jaFw_q7EfCOYJtfgNHFpA" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2jflUPq7EfCOYJtfgNHFpA" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2jflUfq7EfCOYJtfgNHFpA" name="primitivetype">
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_2jflUvq7EfCOYJtfgNHFpA" name="Float"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_2jjPs_q7EfCOYJtfgNHFpA" name="Boolean"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_P_laoPq7EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P_laofq7EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sm-44Pq7EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_snAHAPq7EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2jYQkPq7EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2jYQkfq7EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Codegen:GeneratorHint xmi:id="_snIC0Pq7EfCOYJtfgNHFpA" base_Element="_P8qpgPq7EfCOYJtfgNHFpA" generatorID="Standard Java">
+    <language xmi:type="Codegen:Language" href="pathmap://Codegen_PROFILES/languages.uml#_2Zt6YCjREeayco6FJ_OtTQ"/>
+  </Codegen:GeneratorHint>
+  <Codegen:External xmi:id="_2jas0Pq7EfCOYJtfgNHFpA" name="java.lang.String" base_Classifier="_2jaFw_q7EfCOYJtfgNHFpA"/>
+  <Codegen:External xmi:id="_2jgzcPq7EfCOYJtfgNHFpA" name="Cantante" base_Classifier="_2jgMYPq7EfCOYJtfgNHFpA"/>
+  <standard:Create xmi:id="_2jiBkPq7EfCOYJtfgNHFpA" base_BehavioralFeature="_2jgzdPq7EfCOYJtfgNHFpA"/>
+  <standard:Create xmi:id="_2jjPsPq7EfCOYJtfgNHFpA" base_BehavioralFeature="_2jioo_q7EfCOYJtfgNHFpA"/>
+</xmi:XMI>

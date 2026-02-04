@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_bpadkPViEfCKa8Gytq6Q2g" name="entornosPapyrus">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_bxTOQPViEfCKa8Gytq6Q2g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YsGUQPq6EfCOYJtfgNHFpA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fPmhIPViEfCKa8Gytq6Q2g" name="Cantante">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2KJs4Ph5EfC8CN9rRbeP9g" name="Nombre" visibility="public" type="_YyyAgvq5EfCOYJtfgNHFpA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ttdX8Ph6EfC8CN9rRbeP9g" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ttjekPh6EfC8CN9rRbeP9g" name="LiteralUnlimitedNatural1" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Pu8D0Ph8EfC8CN9rRbeP9g" name="Property6">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Vkx10Ph8EfC8CN9rRbeP9g">
+          <body>-canciones: Cancion [*]</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_n8JzkPreEfCkSbip2CGxzA" name="Property7">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_rcAloPreEfCkSbip2CGxzA">
+          <body>LocalDate: nacimiento</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wEyuoPreEfCkSbip2CGxzA" name="Property8">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_069MUPreEfCkSbip2CGxzA">
+          <body>GeneroMusical: genero;</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_14wJ8PrhEfCkSbip2CGxzA" name="Property8">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_5sNNcPrhEfCkSbip2CGxzA">
+          <body>+ Property8 : JavaPrimitiveTypes::Stirng</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_21MSYPViEfCKa8Gytq6Q2g" name="Public Cantante;(String nombre, LocalDate nacimiento)"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6woIwPh5EfC8CN9rRbeP9g" name="public String MostrarInformacion(){}"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZH8tgPrgEfCkSbip2CGxzA" name="public Cancion ObtenerCanciones"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gwHRoPViEfCKa8Gytq6Q2g" name="Discografica">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9Tb8YPh8EfCgu-AEqwpyZQ" name="prueba" visibility="private">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_i97ksPqfEfCW-ur43Duoqw">
+          <body>lista&lt;String>: lista;</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ihaXQPrgEfCkSbip2CGxzA" name="Property2"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jHaAQPrgEfCkSbip2CGxzA" name="Property3"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j8BUEPrgEfCkSbip2CGxzA" name="Property4"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ksE4APrgEfCkSbip2CGxzA" name="public void añadirCantante"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lOK4cPrgEfCkSbip2CGxzA" name="public void añadirCancion"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mDZ3UPrgEfCkSbip2CGxzA" name="public void buscarCancion"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5SRf8PrgEfCkSbip2CGxzA" name="public void buscarPorCantante"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-SdcUPrgEfCkSbip2CGxzA" name="public void mostrarCatalogo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jJvbcPViEfCKa8Gytq6Q2g" name="cancion">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FtHZkPh8EfC8CN9rRbeP9g" name="Property1">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JOOv4Ph8EfC8CN9rRbeP9g">
+          <body>String titulo;</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-MiP8PrfEfCkSbip2CGxzA" name="Property2"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-2ZFQPrfEfCkSbip2CGxzA" name="Property3"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__4olYPrfEfCkSbip2CGxzA" name="public cancion"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AdYRMPrgEfCkSbip2CGxzA" name="public void añadirCantante"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NfEl4PrgEfCkSbip2CGxzA" name="public String MostrarCanciones"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_20UgUPqfEfCW-ur43Duoqw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ZJNgPqfEfCW-ur43Duoqw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8DIHgPqfEfCW-ur43Duoqw"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VKz9oPqgEfCW-ur43Duoqw" name="Enumeration10">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fpRgkPqgEfCW-ur43Duoqw" name="POP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_h78t0PqgEfCW-ur43Duoqw" name="ROCK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jidYoPqgEfCW-ur43Duoqw" name="JAZZ"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jqhIcPqgEfCW-ur43Duoqw" name="RAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_j7qi0PqgEfCW-ur43Duoqw" name="ELECTRONICA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kRCV4PqgEfCW-ur43Duoqw" name="FLAMENCO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_trHqsPqgEfCW-ur43Duoqw" name="DRILL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZSMpwPqgEfCW-ur43Duoqw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YyGrEPq5EfCOYJtfgNHFpA" name="POOArrayList">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YytIAPq5EfCOYJtfgNHFpA" name="gestionCantantesyCanciones">
+        <packagedElement xmi:type="uml:Class" xmi:id="_YzDtUPq5EfCOYJtfgNHFpA" name="Cancion"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YyxZcPq5EfCOYJtfgNHFpA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YyyAgPq5EfCOYJtfgNHFpA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_YyyAgfq5EfCOYJtfgNHFpA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_YyyAgvq5EfCOYJtfgNHFpA" name="String"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Yy8_oPq5EfCOYJtfgNHFpA" name="time">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Yy9msPq5EfCOYJtfgNHFpA" name="LocalDate"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YzfLIPq5EfCOYJtfgNHFpA" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YzfLIfq5EfCOYJtfgNHFpA" name="primitivetype">
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YzfyMPq5EfCOYJtfgNHFpA" name="Boolean"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Yzi1gfq5EfCOYJtfgNHFpA" name="Integer"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Hbqf8PVkEfCKa8Gytq6Q2g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HbwmkPVkEfCKa8Gytq6Q2g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VKnnAPq5EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VKww8Pq5EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YyWisPq5EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YyWisfq5EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YyXJwPq5EfCOYJtfgNHFpA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YyXJwfq5EfCOYJtfgNHFpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_JOPW8Ph8EfC8CN9rRbeP9g" base_Comment="_JOOv4Ph8EfC8CN9rRbeP9g" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_VkzrAPh8EfC8CN9rRbeP9g" base_Comment="_Vkx10Ph8EfC8CN9rRbeP9g" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_i9-oAPqfEfCW-ur43Duoqw" base_Comment="_i97ksPqfEfCW-ur43Duoqw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <Codegen:External xmi:id="_Yy5VQPq5EfCOYJtfgNHFpA" name="java.lang.String" base_Classifier="_YyyAgvq5EfCOYJtfgNHFpA"/>
+  <Codegen:External xmi:id="_Yy_b4Pq5EfCOYJtfgNHFpA" name="java.time.LocalDate" base_Classifier="_Yy9msPq5EfCOYJtfgNHFpA"/>
+  <Codegen:External xmi:id="_YzE7cPq5EfCOYJtfgNHFpA" name="Cancion" base_Classifier="_YzDtUPq5EfCOYJtfgNHFpA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_rcKWoPreEfCkSbip2CGxzA" base_Comment="_rcAloPreEfCkSbip2CGxzA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_07APoPreEfCkSbip2CGxzA" base_Comment="_069MUPreEfCkSbip2CGxzA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_5sQ30PrhEfCkSbip2CGxzA" base_Comment="_5sNNcPrhEfCkSbip2CGxzA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+</xmi:XMI>
