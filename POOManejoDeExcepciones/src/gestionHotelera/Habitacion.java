@@ -1,6 +1,5 @@
 package gestionHotelera;
 
-
 public class Habitacion implements InterfaceReservable{
 	
 	private int numH;
@@ -8,10 +7,10 @@ public class Habitacion implements InterfaceReservable{
 	private float precioNoche;
 	private boolean reservado;
 	
-	public Habitacion(int numH, TipoHabitacion tipo, float precioNoche) {
+	public Habitacion(int numH, TipoHabitacion tipo) {
 		this.numH= numH;
 		this.tipo= tipo;
-		this.precioNoche= precioNoche;
+		this.precioNoche= tipo.getPrecio();
 		this.reservado = false;
 	}
 
@@ -31,6 +30,15 @@ public class Habitacion implements InterfaceReservable{
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Habitacion))
+			return false;
+		return this.numH == ((Habitacion)obj).numH;
 	}
 
 	public int getNumH() {

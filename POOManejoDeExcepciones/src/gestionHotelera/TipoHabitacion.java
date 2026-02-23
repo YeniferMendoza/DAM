@@ -2,13 +2,13 @@ package gestionHotelera;
 
 public enum TipoHabitacion {
 	
-	INDIVIDUAL(0.00), DOBLE(0.00), SUITE(0.00);
+	INDIVIDUAL(0.00f), DOBLE(0.00f), SUITE(0.00f);
 	
 	private float precio;
 	
 
-	private TipoHabitacion(double d) {
-		this.precio= (float) d;
+	private TipoHabitacion(float d) {
+		this.precio= d;
 	}
 
 

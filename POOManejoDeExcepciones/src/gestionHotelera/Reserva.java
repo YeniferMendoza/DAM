@@ -38,6 +38,14 @@ public class Reserva{
 	public Habitacion getHabitacion() {
 		return habitacion;
 	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public void setHabitacion(Habitacion habitacion) {
+		this.habitacion = habitacion;
+	}
 	
 	
 
